@@ -16,6 +16,6 @@ rm -rf feeds/packages/libs/libcap  ##啥
 rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch ##啥
 rm -rf feeds/packages/net/smartdns      ##广告大师？？
 
-
+svn co https://github.com/openwrt/openwrt/trunk/package/libs/libcap
 sed -i 's/DEPENDS.*/& \+luci-i18n-mwan3-zh-cn/g'  package/lean/luci-app-syncdial/Makefile
 sed -i 's/DEPENDS.*/& \+kmod-usb-core +kmod-usb-ohci +kmod-usb-uhci +kmod-usb-storage +kmod-usb-storage-extras +kmod-usb2 +kmod-scsi-core/g'  package/lean/automount/Makefile
